@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_denumire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:background="@drawable/custom_textview_descriere"
+
+        android:text="@string/denumire_centru_sanitar"
+        android:textColor="@color/red"
+        android:textSize="20sp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_capacitate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_denumire"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:text="@string/capacitate_pacienti"
+        android:textColor="@color/dark_blue"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp" />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_personal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/stanciu_andreea_tv_capacitate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+
+        android:text="@string/numar_personal_medical"
+        android:textColor="@color/dark_blue"
+        />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@+id/stanciu_andreea_tv_personal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+
+        android:text="@string/manager_centru_sanitar"
+        android:textColor="@color/dark_blue"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

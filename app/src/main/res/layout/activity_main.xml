@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activitati.MainActivity"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/stanciu_andreea_main_iv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="25dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/ministerul_sanatatii" />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_main_tv_descriere1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+
+        android:fontFamily="casual"
+        android:text="@string/avand_in_vedere_situatia_alarmanta_a_orasului_focsani_in_ceea_ce_priveste_raspandirea_virusului_covid_19_s_a_adoptat_masura_testarii_in_masa"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        android:background="@drawable/custom_textview"
+
+
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_main_iv_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp" />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_main_tv_descriere2"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/la_momentul_curent_pot_fi_analizate"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="20sp"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_main_tv_descriere1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:textAllCaps="true"
+        />
+    <LinearLayout
+        android:id="@+id/stanciu_andreea_ll_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:weightSum="2"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_main_tv_descriere2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+
+        <Button
+            android:id="@+id/stanciu_andreea_btn_rezultate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/custom_button"
+            android:fontFamily="casual"
+            android:text="@string/rezultatele_testelor_locuitorilor"
+            android:textColor="@color/orange"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/stanciu_andreea_btn_adauga_centre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:background="@drawable/custom_button"
+            android:fontFamily="casual"
+            android:text="@string/centrele_sanitare_provizorii"
+            android:textColor="#E4000E"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

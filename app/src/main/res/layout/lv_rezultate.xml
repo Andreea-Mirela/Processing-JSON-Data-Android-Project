@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    >
+
+    <ImageView
+        android:id="@+id/stanciu_andreea_iv_pacient"
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/stanciu_andreea_tv_pacient_nume"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginLeft="100dp"
+
+        android:src="@drawable/ic_baseline_person_24"
+        />
+    <ImageView
+        android:id="@+id/stanciu_andreea_iv_medic"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stanciu_andreea_tv_medic_nume"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+
+        android:src="@drawable/ic_baseline_assignment_ind_24"
+        />
+
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_pacient_nume"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_iv_pacient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanciu_andreea_tv_medic_nume"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/nume_pacient"
+        android:background="@drawable/custom_textview_descriere"
+         />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_medic_nume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_iv_medic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stanciu_andreea_tv_pacient_nume"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/nume_medic"
+        android:background="@drawable/custom_textview_descriere"
+        />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_pacient_varsta"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_pacient_nume"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanciu_andreea_tv_medic_specializare"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/varsta_pacient"
+        android:background="@drawable/custom_textview_descriere"
+        />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_medic_specializare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_medic_nume"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stanciu_andreea_tv_pacient_varsta"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/specializare_medic"
+        android:background="@drawable/custom_textview_descriere"
+        />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_pacient_rezultat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_pacient_varsta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stanciu_andreea_tv_medic_ani_experienta"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/rezultat"
+        android:background="@drawable/custom_textview_descriere"
+        />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_medic_ani_experienta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_medic_specializare"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stanciu_andreea_tv_pacient_rezultat"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+
+        android:text="@string/ani_experienta"
+        android:background="@drawable/custom_textview_descriere"
+        />
+
+    <ImageView
+        android:id="@+id/stanciu_andreea_iv_centru_sanitar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_pacient_rezultat"
+        android:layout_marginTop="20dp"
+
+        android:src="@drawable/ic_baseline_apartment_24"
+        />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_centru_denumire"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_iv_centru_sanitar"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="@string/denumire_centru_sanitar"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/custom_textview_descriere"
+        />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_centru_capacitate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_centru_denumire"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="@string/capacitate_pacienti"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/custom_textview_descriere"
+        />
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_centru_personal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_centru_capacitate"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+
+        android:text="@string/numar_personal_medical"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/custom_textview_descriere"
+        />
+
+    <TextView
+        android:id="@+id/stanciu_andreea_tv_centru_manager"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stanciu_andreea_tv_centru_personal"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+
+        android:text="@string/manager_centru_sanitar"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"
+
+        android:background="@drawable/custom_textview_descriere"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
